@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: hsl(201, 100%, 20%);
+    margin: 100px 20%;
+}
+h1{
+    color: goldenrod;
+    text-transform: uppercase;
+}
+
+a{
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid;
+    display: block;
+    padding: 10px;
+    margin: 10px 0px;
+    text-decoration: none;
+    color: goldenrod;
+    
+}
+a:hover{
+    background-color: goldenrod;
+    color: hsl(0, 0%, 95%);
+    transition: background-color 0.7s;
+}
+p{
+    color: white;
+}
