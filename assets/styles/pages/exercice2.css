@@ -1,6 +1,6 @@
 @import "../reset.css";
 @import "../style.css";
-@import "../themes/orange_blue.css";
+@import "../themes/vert.css";
 
 /* la balle qui rebondi et qui fait des allés retours */ 
 div{
@@ -67,7 +67,6 @@ hr{
     }
     
 }
-
 
 /* animation du text qui change de couleur et qui rebondi */
 @keyframes switchColorRebon{

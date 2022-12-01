@@ -1,6 +1,6 @@
 body{
-    --background-color: hsl(201, 100%, 20%);;
-    --text-color: goldenrod;
+    --background-color: #3350A6;
+    --text-color: #0DD965;
     --text-color-secondary: hsl(0, 0%, 95%);
     --background-dark: rgb(30, 30, 30);
 }

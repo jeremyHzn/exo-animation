@@ -10,7 +10,7 @@ h1 {
 
 body {
     background-color: var(--background-color);
-    margin: var(--margin-body);
+    margin: 100px 20%;
     user-select: none;
 }
 
