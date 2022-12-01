@@ -1,0 +1,110 @@
+@import "../reset.css";
+@import "../style.css";
+@import "../themes/noir_blanc.css";
+
+div {
+    position: relative;
+    margin: 50px 15px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--background-color);
+
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+div:nth-child(1) {
+    animation-name: loader1;
+    animation-delay: 0s;
+    animation-duration: 2s;
+}
+
+div:nth-child(2) {
+    animation-name: loader2;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+}
+
+div:nth-child(3) {
+    animation-name: loader3;
+    animation-delay: 1s;
+    animation-duration: 2s;
+}
+
+@keyframes loader1 {
+    0% {
+        background-color: var(--text-color-secondary);
+        bottom: 20px;
+    }
+
+    25% {
+        background-color: hsl(246, 40%, 50%);
+    }
+
+    50% {
+        background-color: hsl(246, 10%, 50%);
+        bottom: -20px;
+    }
+
+    75% {
+        background-color: hsl(246, 40%, 50%);
+    }
+
+    100% {
+        background-color: var(--text-color-secondary);
+        bottom: 20px;
+    }
+}
+
+@keyframes loader2 {
+    0% {
+        background-color: var(--text-color-secondary);
+        bottom: 20px;
+    }
+
+    25% {
+        background-color: hsl(246, 40%, 50%);
+    }
+
+    50% {
+        background-color: hsl(246, 10%, 50%);
+        bottom: -20px;
+    }
+
+    75% {
+        background-color: hsl(246, 40%, 50%);
+    }
+
+    100% {
+        background-color: var(--text-color-secondary);
+        bottom: 20px;
+    }
+}
+
+@keyframes loader3 {
+    0% {
+        background-color: var(--text-color-secondary);
+        bottom: 20px;
+    }
+
+    25% {
+        background-color: hsl(246, 40%, 50%);
+    }
+
+    50% {
+        background-color: hsl(246, 10%, 50%);
+        bottom: -20px;
+    }
+
+    75% {
+        background-color: hsl(246, 40%, 50%);
+    }
+
+    100% {
+        background-color: var(--text-color-secondary);
+        bottom: 20px;
+    }
+}

@@ -24,7 +24,7 @@ main {
 article {
     background-color: var(--background-dark);
     border: 10px outset var(--text-color);
-    color: var(--text-color-secondary);
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
     height: 500px;
@@ -34,10 +34,16 @@ article {
     font-size: 2em;
 }
 
+section{
+    display: flex;
+}
+
 div{
     margin: 50px;
-    border: 3px solid var(--text-color-secondary);
+    border: 3px solid var(--text-color);
 }
+
+
 hr{
     position: relative;
     top: -50px;
@@ -74,6 +80,6 @@ footer {
 }
 
 footer p {
-    color: var(--text-color-secondary);
+    color: var(--text-color);
     text-align: center;
 }
