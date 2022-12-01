@@ -6,7 +6,7 @@
 div{
     height: 100px;
     width: 100px;  
-    
+    position: relative;
     animation-name: rotate;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -26,10 +26,14 @@ span{
     from{
         background-color: var(--background-color);
         transform: rotate(-30deg);
+        transform-origin: top;
+        left: -200px;
     }
     to{
         background-color: var(--text-color);
         transform: rotate(380deg);
+        transform-origin: bottom;
+        left: 200px;
     }
 }
 

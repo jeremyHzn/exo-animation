@@ -38,6 +38,14 @@ div{
     margin: 50px;
     border: 3px solid var(--text-color-secondary);
 }
+hr{
+    position: relative;
+    top: -50px;
+    width: 100px;
+}
+p{
+    text-align: center;
+}
 a {
     color: var(--text-color);
     text-decoration: none;
