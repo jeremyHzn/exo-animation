@@ -1,0 +1,39 @@
+h1{
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+body {
+    background-color: var(--background-color);
+    margin: var(--margin-body);
+}
+
+a{
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+a:hover {
+    background-color: var(--text-color);
+    color: var(--text-color-secondary);
+    transition: background-color 0.7s;
+    border: 1px solid var(--text-color-secondary);
+}
+
+span {
+    color: var(--text-color-secondary);
+    font-weight: initial;
+}
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+footer p {
+    color: var(--text-color-secondary);
+    text-align: center;
+}
