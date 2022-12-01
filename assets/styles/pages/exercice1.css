@@ -3,3 +3,44 @@
 @import "../themes/orange_blue.css";
 
 
+div{
+    height: 100px;
+    width: 100px;  
+    
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function:ease-in-out;
+}
+span{
+    animation-name: switchColor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function:ease-in-out;
+}
+
+/* le carré qui fait un tour de 380deg et qui reviens a -30deg tout en changeant de couleur*/
+@keyframes rotate {
+    from{
+        background-color: var(--background-color);
+        transform: rotate(-30deg);
+    }
+    to{
+        background-color: var(--text-color);
+        transform: rotate(380deg);
+    }
+}
+
+/* même principe que rotate */
+@keyframes switchColor{
+    from{
+        color: var(--text-color);
+    }
+    to{
+        color: var(--background-color);
+    }
+}
+
+
