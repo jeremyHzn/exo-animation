@@ -1,0 +1,53 @@
+/*
+ * import des styles
+*/
+@import "./themes/theme_orangeBlue.css";
+@import "reset.css";
+
+/*
+ * Style du index
+*/
+body {
+    background-color: var(--background-color);
+    margin: var(--margin-body);
+}
+
+h1 {
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+/*style des lien Exercice */
+a {
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid;
+    display: block;
+    padding: 10px;
+    margin: 10px 0px;
+    text-decoration: none;
+}
+
+span {
+    color: var(--text-color-secondary);
+    font-weight: normal;
+}
+
+a:hover {
+    background-color: var(--text-color);
+    color: var(--text-color-secondary);
+    transition: background-color 0.7s;
+}
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+footer p {
+    color: var(--text-color-secondary);
+    text-align: center;
+}

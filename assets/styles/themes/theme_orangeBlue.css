@@ -1,6 +1,7 @@
 *{
+    --margin-body: 100px 20%;
     --background-color: hsl(201, 100%, 20%);;
     --text-color: goldenrod;
-    --text-color-hover: hsl(0, 0%, 95%);
+    --text-color-secondary: hsl(0, 0%, 95%);
     --border: 
 }
