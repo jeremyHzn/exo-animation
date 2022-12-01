@@ -43,7 +43,6 @@ div{
     border: 3px solid var(--text-color);
 }
 
-
 hr{
     position: relative;
     top: -50px;
@@ -57,16 +56,32 @@ a {
     text-decoration: none;
     border-radius: 10px;
     padding: 5px;
+    height: 60px;
+
+    /* animation du menu changement de height */
+    transition: height, background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+
 }
 
-a:hover {
+a:hover {    
     background-color: var(--text-color);
     color: var(--text-color-secondary);
-    transition: background-color 0.7s;
     border: 1px solid var(--text-color-secondary);
-}
 
-span {
+    /* animation du menu changement de height */
+    height:90px;
+    transition: height, background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+
+}
+a:hover > span{
+    display: block;
+}
+a > span {
+    display: none;
     color: var(--text-color-secondary);
     font-weight: initial;
 }

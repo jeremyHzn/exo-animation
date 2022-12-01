@@ -8,6 +8,7 @@ div {
     width: 50px;
     border-radius: 50%;
     position: relative;
+    /* partie animation */
     animation-name: rebon;
     animation-duration: 5s;
     animation-iteration-count: infinite;

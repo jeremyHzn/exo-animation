@@ -2,6 +2,7 @@
 @import "../style.css";
 @import "../themes/noir_blanc.css";
 
+/* enemble des propriété communes de chaque div du loader */
 div {
     position: relative;
     margin: 50px 15px;
@@ -9,102 +10,85 @@ div {
     width: 50px;
     border-radius: 50%;
     background-color: var(--background-color);
+    /* partie animation */
 
-    animation-direction: reverse;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-
 }
 
+/* première rond du loader */
 div:nth-child(1) {
     animation-name: loader1;
     animation-delay: 0s;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
 }
 
+/* second rond du loader */
 div:nth-child(2) {
     animation-name: loader2;
     animation-delay: 0.5s;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
 }
 
+/* troisième rond du loader */
 div:nth-child(3) {
     animation-name: loader3;
     animation-delay: 1s;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
 }
 
+/* premier rond du loader qui se lance en premier  */
 @keyframes loader1 {
     0% {
         background-color: var(--text-color-secondary);
-        bottom: 20px;
-    }
-
-    25% {
-        background-color: hsl(246, 40%, 50%);
+        bottom: 50px;
     }
 
     50% {
-        background-color: hsl(246, 10%, 50%);
-        bottom: -20px;
+        background-color: var(--background-color);
+        bottom: 0px;
     }
 
-    75% {
-        background-color: hsl(246, 40%, 50%);
-    }
 
     100% {
         background-color: var(--text-color-secondary);
-        bottom: 20px;
+        bottom: 50px;
     }
 }
 
+/* second rond du loader qui se lance en premier  */
 @keyframes loader2 {
     0% {
         background-color: var(--text-color-secondary);
-        bottom: 20px;
+        bottom: 50px;
     }
 
-    25% {
-        background-color: hsl(246, 40%, 50%);
-    }
 
     50% {
-        background-color: hsl(246, 10%, 50%);
-        bottom: -20px;
-    }
-
-    75% {
-        background-color: hsl(246, 40%, 50%);
+        background-color: var(--background-color);
+        bottom: 0px;
     }
 
     100% {
         background-color: var(--text-color-secondary);
-        bottom: 20px;
+        bottom: 50px;
     }
 }
 
+/* troisième rond du loader qui se lance en premier  */
 @keyframes loader3 {
     0% {
         background-color: var(--text-color-secondary);
-        bottom: 20px;
-    }
-
-    25% {
-        background-color: hsl(246, 40%, 50%);
+        bottom: 50px;
     }
 
     50% {
-        background-color: hsl(246, 10%, 50%);
-        bottom: -20px;
-    }
-
-    75% {
-        background-color: hsl(246, 40%, 50%);
+        background-color: var(--background-color);
+        bottom: 0px;
     }
 
     100% {
         background-color: var(--text-color-secondary);
-        bottom: 20px;
+        bottom: 50px;
     }
 }
