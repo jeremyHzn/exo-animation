@@ -2,7 +2,6 @@
 @import "../style.css";
 @import "../themes/orange_blue.css";
 
-
 div{
     position: absolute;
     height: 20px;
@@ -23,11 +22,13 @@ div:nth-child(2){
     left: 750px;
     animation-delay: 1s;
 }
+
 div:nth-child(3){
     top: 150px;
     left: 800px;
     animation-delay: 1.5s;
 }
+
 div:nth-child(4){
     top: 150px;
     left: 850px;
@@ -42,7 +43,7 @@ div:nth-child(4){
         background-color: rgb(255, 225, 0);
         top: 150px;
         left: 350px;
-        transform: rotate(0deg);
+        transform: rotate(0turn);
     }
     35%{
         background-color: rgb(0, 255, 0);
