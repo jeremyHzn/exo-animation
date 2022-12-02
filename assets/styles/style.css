@@ -83,9 +83,15 @@ a:hover > span{
 }
 
 a > span {
+    font-size: 0.85em;
     display: none;
-    color: var(--text-color-secondary);
+    color: lightgreen;
     font-weight: initial;
+}
+
+em{
+    color: red;
+
 }
 
 footer {
