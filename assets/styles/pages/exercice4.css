@@ -1,0 +1,73 @@
+@import "../reset.css";
+@import "../style.css";
+@import "../themes/noir_blanc.css";
+
+
+div{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-out;
+}
+
+div:nth-child(1){
+    top: 150px;
+    left: 700px;
+}
+div:nth-child(2){
+    top: 150px;
+    left: 750px;
+    animation-delay: 1s;
+}
+div:nth-child(3){
+    top: 150px;
+    left: 800px;
+    animation-delay: 1.5s;
+}
+div:nth-child(4){
+    top: 150px;
+    left: 850px;
+    animation-delay: 2s;
+}
+
+
+@keyframes rotate {
+    0%{
+        background-color: rgb(255, 0, 0);
+    }
+    15%{
+
+        top: 150px;
+        left: 350px;
+        transform: rotate(0deg);
+    }
+    35%{
+
+        background-color: rgb(0, 255, 0);
+        top: 600px;
+        left: 350px;
+        transform: rotate(5turn);
+    }
+    65%{
+        background-color: rgb(0, 0, 255);
+        top: 600px;
+        left: 1450px;
+        transform: rotate(10000turn);
+    }
+    85%{
+        
+        background-color: rgb(255, 0, 195);
+        top: 150px;
+        left: 1450px;
+        transform: rotate(0turn);
+    }
+    100%{
+
+        background-color: rgb(225, 255, 0);
+        transform: rotate(0turn);
+
+    }
+}

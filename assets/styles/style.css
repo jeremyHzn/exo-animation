@@ -36,6 +36,7 @@ article {
 
 section{
     display: flex;
+    justify-content: center;
 }
 
 div{
@@ -80,6 +81,7 @@ a:hover {
 a:hover > span{
     display: block;
 }
+
 a > span {
     display: none;
     color: var(--text-color-secondary);

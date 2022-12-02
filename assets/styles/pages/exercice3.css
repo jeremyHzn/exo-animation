@@ -10,8 +10,8 @@ div {
     width: 50px;
     border-radius: 50%;
     background-color: var(--background-color);
+    
     /* partie animation */
-
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
@@ -41,18 +41,27 @@ div:nth-child(3) {
 @keyframes loader1 {
     0% {
         background-color: var(--text-color-secondary);
-        bottom: 50px;
+        bottom: 0px;
     }
 
     50% {
         background-color: var(--background-color);
+        bottom: 30px;
+    }
+
+    75% {
+        background-color: var(--text-color-secondary);
         bottom: 0px;
     }
 
+    85%{
+        background-color: var(--text-color-secondary);
+        bottom: 20px;
+    }
 
     100% {
         background-color: var(--text-color-secondary);
-        bottom: 50px;
+        bottom: 0px;
     }
 }
 
@@ -60,18 +69,27 @@ div:nth-child(3) {
 @keyframes loader2 {
     0% {
         background-color: var(--text-color-secondary);
-        bottom: 50px;
+        bottom: 0px;
     }
-
 
     50% {
         background-color: var(--background-color);
+        bottom: 30px;
+    }
+
+    75% {
+        background-color: var(--text-color-secondary);
         bottom: 0px;
+    }
+
+    85%{
+        background-color: var(--text-color-secondary);
+        bottom: 20px;
     }
 
     100% {
         background-color: var(--text-color-secondary);
-        bottom: 50px;
+        bottom: 0px;
     }
 }
 
@@ -79,16 +97,26 @@ div:nth-child(3) {
 @keyframes loader3 {
     0% {
         background-color: var(--text-color-secondary);
-        bottom: 50px;
+        bottom: 0px;
     }
 
     50% {
         background-color: var(--background-color);
+        bottom: 50px;
+    }
+
+    75% {
+        background-color: var(--text-color-secondary);
         bottom: 0px;
+    }
+
+    85%{
+        background-color: var(--text-color-secondary);
+        bottom: 20px;
     }
 
     100% {
         background-color: var(--text-color-secondary);
-        bottom: 50px;
+        bottom: 0px;
     }
 }

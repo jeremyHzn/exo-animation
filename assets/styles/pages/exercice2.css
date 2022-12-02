@@ -3,7 +3,7 @@
 @import "../themes/vert.css";
 
 /* la balle qui rebondi et qui fait des allés retours */
-div {
+div ,span, hr{
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -12,7 +12,7 @@ div {
     animation-name: rebon;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction:alternate;
     animation-timing-function: ease-out;
 }
 
@@ -21,18 +21,17 @@ span {
     position: relative;
     animation-name: switchColorRebon;
     animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+
 }
 
 /* l'ombre qui suit la balle */
 hr {
+    height: 2px;
+    
+    border-radius: 50%;
     animation-name: shadow;
     animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-out;
+
 }
 
 /* animation de la balle qui rebondi et qui fait des allés retours */
