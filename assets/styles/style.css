@@ -76,8 +76,8 @@ a:hover {
     transition: height, background-color;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
-
 }
+
 a:hover > span{
     display: block;
 }
@@ -85,7 +85,7 @@ a:hover > span{
 a > span {
     font-size: 0.85em;
     display: none;
-    color: lightgreen;
+    color: green;
     font-weight: initial;
 }
 
